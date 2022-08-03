@@ -1,27 +1,19 @@
-<page>
-    <actionBar title="Home" />
-    <gridLayout>
-        <label class="info">
-            <formattedString>
-                <span class="fas" text="&#xf135;" />
-                <span text=" {message}" />
-            </formattedString>
-        </label>
-    </gridLayout>
-</page>
-
 <script lang="ts">
-    let message: string = "Blank Svelte Native App"
+	import quran from "../data/quran_en.json";
 </script>
 
-<style>
-    .info .fas {
-        color: #3A53FF;
-    }
+<page>
+	<actionBar title="Initial Test" />
+	<tabView>
+		{#each quran as chapter}
+			<tabViewItem title="{chapter.id}. {chapter.translation}">
+				<scrollView>
+					<label textWrap={true} text={JSON.stringify(chapter.verses, null, 2)} />
+				</scrollView>
+			</tabViewItem>
+		{/each}
+	</tabView>
+</page>
 
-    .info {
-        font-size: 20;
-        horizontal-align: center;
-        vertical-align: center;
-    }
+<style>
 </style>

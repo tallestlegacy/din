@@ -9,12 +9,26 @@
     "svelte-native": "~1.0.0"
   },
   "devDependencies": {
+    "@nativescript/android": "8.3.0",
+    "@nativescript/eslint-plugin": "^0.0.4",
     "@nativescript/types": "~8.3.0",
     "@nativescript/webpack": "~5.0.6",
+    "@typescript-eslint/parser": "^5.32.0",
+    "eslint": "^8.21.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "prettier": "2.7.1",
+    "prettier-plugin-svelte": "^2.7.0",
     "svelte": "~3.44.0",
     "svelte-loader": "^3.1.2",
     "svelte-native-preprocessor": "^1.0.0",
     "svelte-preprocess": "^4.7.0",
     "typescript": "~4.5.5"
+  },
+  "scripts": {
+    "format": "prettier --write 'app/*.{css,html,js,svelte}'",
+    "lint": "eslint --fix --quiet app --ext .js,.svelte",
+    "android": "ns run android",
+    "build-a": "ns build android"
   }
 }
