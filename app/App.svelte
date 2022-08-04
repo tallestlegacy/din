@@ -1,7 +1,9 @@
 <script lang="ts">
-	import Home from "./components/Home.svelte";
+	import About from "./screens/About.svelte";
+	import Home from "./screens/Home.svelte";
+	import Quran from "./screens/Quran.svelte";
 </script>
 
 <frame>
-	<Home />
+	<Quran />
 </frame>
