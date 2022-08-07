@@ -13,7 +13,7 @@
 	};
 </script>
 
-<listView items={require(`../data/en/${chapter.id}.json`).verses}>
+<listView items={require(`../data/en/${chapter.id}.json`).verses} class="container">
 	<Template let:item={verse}>
 		<Verse {verse} />
 	</Template>

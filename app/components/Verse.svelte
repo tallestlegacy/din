@@ -9,7 +9,7 @@
 
 <flexboxLayout columnSpan={1} class="verse" flexDirection="column">
 	<label textWrap={true} text={verse.text} class="text" />
-	<!--label textWrap={true} text={verse.transliteration} class="transliteration" /-->
+	<label textWrap={true} text={verse.transliteration} class="transliteration" />
 	<label textWrap={true} text="{verse.id}. {verse.translation}" class="translation" />
 </flexboxLayout>
 
@@ -19,7 +19,7 @@
 	}
 
 	.text {
-		font-size: 20px;
+		font-size: 24px;
 		color: gray;
 	}
 

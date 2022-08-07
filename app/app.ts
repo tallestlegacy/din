@@ -11,6 +11,13 @@ import { registerNativeViewElement } from "svelte-native/dom";
 import PagerElement from "@nativescript-community/ui-pager/svelte";
 import { PagerItem } from "@nativescript-community/ui-pager";
 
+import { install } from "@nativescript-community/ui-drawer";
+import DrawerElement from "@nativescript-community/ui-drawer/svelte";
+
+//install(); // install Drawer Gesture
+DrawerElement.register(); //register Drawer
+
+// Register Pager Elemenr
 PagerElement.register();
 registerNativeViewElement("pageritem", () => PagerItem);
 

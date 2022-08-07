@@ -8,6 +8,5 @@
 	label {
 		font-size: 24px;
 		font-weight: 200;
-		color: gray;
 	}
 </style>

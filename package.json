@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@nativescript-community/ui-drawer": "^0.1.1",
     "@nativescript-community/ui-pager": "^13.0.42",
     "@nativescript/core": "~8.3.0",
     "@nativescript/theme": "~3.0.2",

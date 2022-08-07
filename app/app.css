@@ -15,3 +15,10 @@
 	font-family: "Font Awesome 5 Free", "fa-regular-400";
 	font-weight: 400;
 }
+:root {
+	--accent-color : #7dd3fc;
+}
+
+actionbar {
+	background-color:var(--accent-color);
+}

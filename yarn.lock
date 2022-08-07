@@ -298,6 +298,25 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@nativescript-community/gesturehandler@^2.0.5":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@nativescript-community/gesturehandler/-/gesturehandler-2.0.5.tgz#43e0b939a90bc5e137b1f21d8703168780517044"
+  integrity sha512-1NZrTSfA3VH4H7XA4vbdxHmUVfs+/hnKQFwDKuuxCMS0WQAPYjpjN7MbgqzoO+Gzmulh2vo1W9OWS/qP3neryw==
+  dependencies:
+    "@nativescript-community/observable" "^2.0.10"
+
+"@nativescript-community/observable@^2.0.10":
+  version "2.0.11"
+  resolved "https://registry.yarnpkg.com/@nativescript-community/observable/-/observable-2.0.11.tgz#f4f2a9fc0212b8a6d78a1e83b53c58cb634791d2"
+  integrity sha512-G30bcw2gwvBB5ceJ23mEtej/iYVqXCrgLaMxOftNrno0wyg0RWuJQqDUFwO4bZdSRz8/um9oM1u/5SihmxJvBA==
+
+"@nativescript-community/ui-drawer@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@nativescript-community/ui-drawer/-/ui-drawer-0.1.1.tgz#bf2b5fe729ce7447a38c14f39dc2c873d493b9e3"
+  integrity sha512-/DSEpfjWjtWeINW5RIu1Sv9ECp5k5ynMJH+DB54kGUfM6C5GSWdW+Ggb1pmXpi0dWUxV2SiqmdWPD2IObtkXlg==
+  dependencies:
+    "@nativescript-community/gesturehandler" "^2.0.5"
+
 "@nativescript-community/ui-pager@^13.0.42":
   version "13.0.42"
   resolved "https://registry.yarnpkg.com/@nativescript-community/ui-pager/-/ui-pager-13.0.42.tgz#34ff6c97a1cc6c90e82f10ced60a16c85818c9a4"

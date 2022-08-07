@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { navigate, showModal } from "svelte-native";
 	import About from "./About.svelte";
-	import Quran from "./Quran.svelte";
+	import Quran from "./Quran/QuranMainScreen.svelte";
 </script>
 
 <page>
