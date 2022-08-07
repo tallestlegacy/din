@@ -4,6 +4,6 @@
 	import Quran from "./screens/Quran.svelte";
 </script>
 
-<frame>
-	<Quran />
+<frame animated={true}>
+	<Home />
 </frame>

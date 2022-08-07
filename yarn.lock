@@ -298,6 +298,11 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@nativescript-community/ui-pager@^13.0.42":
+  version "13.0.42"
+  resolved "https://registry.yarnpkg.com/@nativescript-community/ui-pager/-/ui-pager-13.0.42.tgz#34ff6c97a1cc6c90e82f10ced60a16c85818c9a4"
+  integrity sha512-LFOhlZhA3uDMQnD+GJyop5EGBXLWsYBfMY9UG9pYfyg7lNrjjihmgT1rnuoVqiL1wzJRXhZJud2w7UnZIUj/4Q==
+
 "@nativescript/android@8.3.0":
   version "8.3.0"
   resolved "https://registry.yarnpkg.com/@nativescript/android/-/android-8.3.0.tgz#6783484da9781b7c338bcf0ffff6a90410733012"

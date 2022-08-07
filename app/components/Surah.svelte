@@ -13,17 +13,11 @@
 	};
 </script>
 
-<scrollView>
-	<stackLayout class="container">
-		<SubHeading text="{chapter.transliteration} : {chapter.name}" />
-		<Heading text={chapter.translation} />
-		<listView items={require(`../data/en/${chapter.id}.json`).verses}>
-			<Template let:item={verse}>
-				<Verse {verse} />
-			</Template>
-		</listView>
-	</stackLayout>
-</scrollView>
+<listView items={require(`../data/en/${chapter.id}.json`).verses}>
+	<Template let:item={verse}>
+		<Verse {verse} />
+	</Template>
+</listView>
 
 <style>
 	.container {
