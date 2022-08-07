@@ -17,6 +17,9 @@ yarn-error.log*
 .idea
 .cloud
 .project
+*.keystore
+*.apk
+*.aab
 tmp/
 typings/
 
