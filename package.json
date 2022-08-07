@@ -31,6 +31,7 @@
     "format": "prettier --write 'app/*.{css,html,js,svelte}'",
     "lint": "eslint --fix --quiet app --ext .js,.svelte",
     "android": "ns run android",
-    "build-a": "ns build android"
+    "build-a": "ns build android",
+    "clean": "ns clean"
   }
 }

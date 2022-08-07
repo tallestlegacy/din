@@ -21,7 +21,6 @@
 
 <style>
 	.container {
-		padding: 24px;
 		height: 100%;
 	}
 </style>

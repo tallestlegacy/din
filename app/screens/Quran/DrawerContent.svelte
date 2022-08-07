@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Template } from "svelte-native/components";
+	import colors from "~/constants/colors";
 	import { selectedChapterIndex } from "~/store";
 
 	export let chapters: {
@@ -13,8 +14,8 @@
 	export let toggleDrawer: () => any;
 
 	const handleTap = (id: number): any => {
-		toggleDrawer();
 		selectedChapterIndex.set(id - 1);
+		toggleDrawer();
 	};
 </script>
 
@@ -25,6 +26,7 @@
 				handleTap(chapter.id);
 			}}
 			class="drawerItem"
+			color={chapter.id == $selectedChapterIndex + 1 ? colors.accentDark : colors.black}
 			justifyContent="space-between"
 		>
 			<label text="{chapter.id}. {chapter.translation}" />
@@ -40,9 +42,10 @@
 
 	.drawerItem {
 		font-size: 16px;
+		margin: 0;
 	}
 
 	label {
-		width: fit-content;
+		font-weight: 300;
 	}
 </style>
