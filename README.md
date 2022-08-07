@@ -2,6 +2,9 @@
 
 A Material UI inspired Quran Reader
 
+![image](https://user-images.githubusercontent.com/71118951/183293892-aea43eef-9ed0-4c08-af93-b2648db416f1.png)
+
+
 ## Features
 
 - [x] Simple surah navigation with Drawer + ViewPager layout
