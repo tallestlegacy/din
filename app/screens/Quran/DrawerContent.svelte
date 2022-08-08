@@ -14,17 +14,19 @@
 	export let toggleDrawer: () => any;
 
 	const handleTap = (id: number): any => {
-		selectedChapterIndex.set(id - 1);
+		selectedChapterIndex.set(id);
 		toggleDrawer();
 	};
 </script>
 
-<listView items={chapters}>
+<listView
+	items={chapters}
+	on:itemTap={(event) => {
+		handleTap(event.index);
+	}}
+>
 	<Template let:item={chapter}>
 		<flexboxLayout
-			on:tap={() => {
-				handleTap(chapter.id);
-			}}
 			class="drawerItem"
 			color={chapter.id == $selectedChapterIndex + 1 ? colors.accentDark : colors.black}
 			justifyContent="space-between"
