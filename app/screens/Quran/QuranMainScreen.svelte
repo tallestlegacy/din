@@ -7,6 +7,7 @@
 	import colors from "~/constants/colors";
 
 	import { selectedChapterIndex } from "~/store";
+	import Spacer from "~/components/Spacer.svelte";
 
 	$: currentChapter = chapters[$selectedChapterIndex];
 
@@ -16,7 +17,7 @@
 	}
 </script>
 
-<page androidStatusBarBackground={colors.accentDark}>
+<page androidStatusBarBackground={colors.accentDark} actionBarHidden={true}>
 	<actionBar on:tap={toggleDrawer} backgroundColor={colors.accentDark} color={colors.white}>
 		<flexboxLayout justifyContent="space-between" class="actionBarContent">
 			<label class="" />
@@ -42,7 +43,30 @@
 		</gridLayout>
 
 		<!-- Surah ViewPager -->
-		<gridLayout prop:mainContent>
+		<stackLayout prop:mainContent>
+			<flexboxLayout
+				justifyContent="center"
+				alignItems="center"
+				class="actionBarContent"
+				backgroundColor={colors.accentDark}
+				on:tap={toggleDrawer}
+			>
+				<flexboxLayout
+					borderColor={colors.whiteTransluscent}
+					borderRadius="50%"
+					borderWidth="1px"
+					padding="0px 40px"
+					justifyContent="center"
+					alignItems="center"
+				>
+					<ActionBarHeading
+						color={colors.white}
+						text="{currentChapter.id}. {currentChapter.translation}"
+					/>
+					<Spacer />
+					<ActionBarHeading color={colors.white} text=" {currentChapter.name}" />
+				</flexboxLayout>
+			</flexboxLayout>
 			<pager
 				showIndicator={true}
 				indicatorColor="#00ff00"
@@ -61,7 +85,7 @@
 					</pageritem>
 				{/each}
 			</pager>
-		</gridLayout>
+		</stackLayout>
 	</drawer>
 </page>
 
@@ -69,5 +93,6 @@
 	.actionBarContent {
 		width: 100%;
 		border: 2px #fff;
+		padding: 24px;
 	}
 </style>

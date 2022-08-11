@@ -2541,6 +2541,11 @@ nanoid@^3.3.4:
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.4.tgz#730b67e3cd09e2deacf03c027c81c9d9dbc5e8ab"
   integrity sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==
 
+nativescript-microsoft-appcenter@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/nativescript-microsoft-appcenter/-/nativescript-microsoft-appcenter-2.0.0.tgz#b401d01cdcf378ebc933b3a59878147bed06bf24"
+  integrity sha512-G4Ju9Meo7+dVs4+bkCUvBKt24LYde8tDL6wRkwPzTvXc0zgd/v3cUlKKSWn0Jqmh+fPzhihkhnCZrzG2txtNhA==
+
 natural-compare@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
