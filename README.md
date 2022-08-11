@@ -26,6 +26,10 @@ KeyGen :
  keytool -genkey -v -keystore release.keystore -alias release -keyalg RSA -keysize 2048 -validity 10000
 ```
 
+```sh
+keytool -importkeystore -srckeystore release.keystore -destkeystore release.keystore -deststoretype pkcs12
+```
+
 Build release apk:
 
 ```sh

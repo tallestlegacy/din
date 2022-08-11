@@ -8,6 +8,7 @@
     "@nativescript-community/ui-pager": "^13.0.42",
     "@nativescript/core": "~8.3.0",
     "@nativescript/theme": "~3.0.2",
+    "nativescript-microsoft-appcenter": "^2.0.0",
     "svelte-native": "~1.0.0"
   },
   "devDependencies": {
